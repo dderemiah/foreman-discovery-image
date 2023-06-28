@@ -335,3 +335,11 @@ in file headers.
 Generated image is covered by additional licenses, refer to Fedora and
 CentOS licensing information.
 
+sudo ./build-livecd-root dhcp ./result "nomodeset nokaslr \
+proxy.url=https://147.11.148.148 \
+proxy.type=foreman fdi.pxauto=1 fdi.ssh=0 fdi.rootpw=redhat"
+
+sudo ./build-livecd-root static_183 ./result "nomodeset nokaslr \
+fdi.pxip=147.11.183.100/24 fdi.pxgw=147.11.183.1 \
+fdi.pxdns=147.11.147.190 proxy.url=https://ala-p1orchaserver01.idm.wrs.com/ \
+proxy.type=foreman fdi.pxauto=1 fdi.ssh=0 fdi.rootpw=redhat"
